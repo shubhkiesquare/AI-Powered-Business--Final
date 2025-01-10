@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <!-- Only Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/home.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <!-- #################################### Navbar Start ####################################### -->
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container">
+        <!-- Logo -->
+        <img src="./Image/kielogo.jpeg" alt="Logo" width="250" height="65" />
+
+        <!-- Hamburger Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Centered Navigation Links -->
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                What we do
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                What we think
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Who we are
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Careers
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Right Aligned Section -->
+          <div class="d-flex align-items-center gap-3">
+            <!-- Search Bar -->
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 px-1 py-1"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+
+            <!-- World Wide Web Icon -->
+            <img
+              src="./Image/world-wide-web-icon-png-0.jpg"
+              alt="World Wide Web"
+              width="30"
+              height="30"
+            />
+
+            <!-- India Dropdown -->
+            <span class="navbar-text">
+              <a
+                class="nav-link dropdown-toggle text-black text-decoration-none"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                India
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ################################# Home Page Video ####################################### -->
+    <div class="hero">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="16000"
+        data-bs-pause="false"
+      >
+        <div class="carousel-inner carousel-inner-div">
+          <!-- Slide 1 -->
+          <div class="carousel-item carousel-item-div active">
+            <div class="image-container">
+              <img
+                src="./Image/BG7.jpg"
+                class="d-block w-100"
+                alt="First slide"
+              />
+            </div>
+            <div class="hero-content">
+              <h1 class="animated-text h1home">
+                <span class="word word1">AI-</span>
+                <span class="word word2">Powered</span>
+                <span class="word word3">Business</span>
+                <span class="word word4">Intelligence</span>
+              </h1>
+              <br />
+              <h5 class="animated-text2 h2home">
+                <span class="word word1">Unlocking</span>
+                <span class="word word2">Insights</span>
+                <span class="word word3">Through</span>
+                <span class="word word4">Intelligent</span>
+                <span class="word word5">Dashboards</span>
+              </h5>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item carousel-item-div">
+            <div class="image-container">
+              <img
+                src="./Image/BG2.jpg"
+                class="d-block w-100"
+                alt="Second slide"
+              />
+            </div>
+            <div class="hero-content">
+              <h1 class="animated-text h1home">
+                <span class="word word1">AI-Infused</span>
+                <span class="word word2">BI:</span>
+                <span class="word word3">Turning</span>
+                <span class="word word4">Data</span>
+                <span class="word word5">into</span>
+                <span class="word word6">Action</span>
+              </h1>
+              <br />
+              <h5 class="animated-text2 h2home">
+                <span class="word word1">Automate,</span>
+                <span class="word word2">Predict,</span>
+                <span class="word word3">and</span>
+                <span class="word word4">Analyze</span>
+                <span class="word word5">Your</span>
+                <span class="word word6">Way</span>
+                <span class="word word7">to</span>
+                <span class="word word8">Enhanced</span>
+                <span class="word word9">Business</span>
+                <span class="word word10">Performance</span>
+              </h5>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item carousel-item-div">
+            <div class="image-container">
+              <img
+                src="./Image/BG6.jpg"
+                class="d-block w-100"
+                alt="Third slide"
+              />
+            </div>
+            <div class="hero-content">
+              <h1 class="animated-text h1home">
+                <span class="word word1">Data</span>
+                <span class="word word2">Intelligence</span>
+                <span class="word word3">Reinvented</span>
+                <span class="word word4">with</span>
+                <span class="word word5">AI</span>
+              </h1>
+              <br />
+              <h5 class="animated-text2 h2home">
+                <span class="word word1">Experience</span>
+                <span class="word word2">Smarter</span>
+                <span class="word word3">Analytics</span>
+                <span class="word word4">and</span>
+                <span class="word word5">Transformative</span>
+                <span class="word word6">BI</span>
+                <span class="word word7">Solutions</span>
+                <span class="word word8">to</span>
+                <span class="word word9">Drive</span>
+                <span class="word word10">Growth</span>
+              </h5>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-item carousel-item-div">
+            <div class="image-container">
+              <img
+                src="./Image/BG3.jpg"
+                class="d-block w-100"
+                alt="Fourth slide"
+              />
+            </div>
+            <div class="hero-content">
+              <h1 class="animated-text slideFourth">
+                <span class="word word1">AI-</span>
+                <span class="word word2">Enhanced</span>
+                <span class="word word3">Business</span>
+                <span class="word word4">Intelligence</span>
+                <span class="word word5">for</span>
+                <span class="word word6">Competitive</span>
+                <span class="word word7">Edge</span>
+              </h1>
+              <br />
+              <h5 class="animated-text2 h2home">
+                <span class="word word1">Transform</span>
+                <span class="word word2">Raw</span>
+                <span class="word word3">Data</span>
+                <span class="word word4">into</span>
+                <span class="word word5">Strategic</span>
+                <span class="word word6">Insights</span>
+                <span class="word word7">that</span>
+                <span class="word word8">Drive</span>
+                <span class="word word9">Business</span>
+                <span class="word word10">Success</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ############################################################################################ -->
+    <!-- Smart Feature Section Start -->
+    <div class="keyfeaturebg">
+      <div class="keyfeature">Smart Features for Smarter Decisions</div>
+      <section class="expertise">
+        <!--Automated Data Processing -->
+        <div class="expertise-item">
+          <a href="./Automated Data Processing/ADProcessing.html">
+            <h3 id="heading2">Automated Data Processing</h3>
+          </a>
+          <div class="Expertisesectionhover">
+            <div class="img-container">
+              <img
+                src="./Image/AutoMatedImage.jpg"
+                alt="Data Engineering"
+                class="image"
+              />
+            </div>
+            <a href="./Automated Data Processing/ADProcessing.html">
+              <button class="read-more-btn">Read More</button>
+            </a>
+          </div>
+        </div>
+
+        <!--Predictive Analysis-->
+        <div class="expertise-item">
+          <a href="./Predictive Analysis/predictiveAnalysis.html">
+            <h3 id="heading2">Predictive Analytics</h3>
+          </a>
+          <div class="Expertisesectionhover">
+            <div class="img-container">
+              <img
+                src="./Image/Operational Efficiency.jpg"
+                alt="Data Science"
+                class="image"
+              />
+            </div>
+            <a href="./Predictive Analysis/predictiveAnalysis.html">
+              <button class="read-more-btn">Read More</button>
+            </a>
+          </div>
+        </div>
+
+        <!--Natural Language Processing-->
+        <div class="expertise-item">
+          <a href="./NLP/NLP.html">
+            <h3 id="heading2">Natural Language Processing</h3>
+          </a>
+          <div class="Expertisesectionhover">
+            <div class="img-container">
+              <img
+                src="./Image/NLPImage.jpg"
+                alt="Data Visualization"
+                class="image"
+                id="visualization"
+              />
+            </div>
+            <a href="./NLP/NLP.html">
+              <button class="read-more-btn">Read More</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Amomaly Detection-->
+        <div class="expertise-item">
+          <a href="./Anomaly Detection/Anomaly.html">
+            <h3 id="heading2">Amomaly Detection</h3>
+          </a>
+          <div class="Expertisesectionhover">
+            <div class="img-container">
+              <img
+                src="./Image/anomily detection.jpg"
+                alt="Data Visualization"
+                class="image"
+                id="visualization"
+                style="width: 350px"
+              />
+            </div>
+            <a href="./Anomaly Detection/Anomaly.html">
+              <button class="read-more-btn">Read More</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ################################################# Use Cases Section Start ######################################################## -->
+      <div class="usecasebg">
+        <div class="container mt-4">
+          <h2 class="usecases text-center mb-4">AI Powered Solution</h2>
+          <div class="scrolling-slider">
+            <div class="scrolling-slider-inner">
+              <!-- Card 1 -->
+              <div class="card card1">
+                <div class="usecaseImg">
+                  <img
+                    src="./Image/Sales.jpg"
+                    class="card-img-top"
+                    alt="Sales Forecasting"
+                  />
+                </div>
+                <div
+                  class="card-img-overlay useCardOverlay d-flex align-items-end"
+                >
+                  <div class="overlay-text usecaseText">
+                    <h4>Sales Forecasting</h4>
+                    <p class="card-text">
+                      Predict sales trends and identify potential market
+                      opportunities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card card1">
+                <div class="usecaseImg">
+                  <img
+                    src="./Image/customer segmentation img3.jpg"
+                    class="card-img-top"
+                    alt="Customer Segmentation"
+                  />
+                </div>
+                <div
+                  class="card-img-overlay useCardOverlay d-flex align-items-end"
+                >
+                  <div class="overlay-text usecaseText">
+                    <h4>Customer Segmentation</h4>
+                    <p class="card-text">
+                      Use AI to classify customers into segments for targeted
+                      marketing strategies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more cards as needed -->
+              <!-- Card 3 -->
+              <div class="card card1">
+                <div class="usecaseImg">
+                  <img
+                    src="./Image/FinancialReporting.jpg"
+                    class="card-img-top"
+                    alt="Financial Reporting"
+                  />
+                </div>
+                <div
+                  class="card-img-overlay useCardOverlay d-flex align-items-end"
+                >
+                  <div class="overlay-text usecaseText">
+                    <h4>Financial Reporting</h4>
+                    <p class="card-text">
+                      Automate complex financial analyses to assess risks and
+                      opportunities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="card card1">
+                <div class="usecaseImg">
+                  <img
+                    src="./Image/Operational Efficiency2.jpg"
+                    class="card-img-top"
+                    alt="Operational Efficiency"
+                  />
+                </div>
+                <div
+                  class="card-img-overlay useCardOverlay d-flex align-items-end"
+                >
+                  <div class="overlay-text usecaseText">
+                    <h4>Operational Efficiency</h4>
+                    <p class="card-text">
+                      Optimize supply chain and resource allocation using
+                      data-driven decisions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ############################### Repeat ############################ -->
+              <!-- Card 1 -->
+              <div class="card card1">
+                <div class="usecaseImg">
+                  <img
+                    src="./Image/Sales.jpg"
+                    class="card-img-top"
+                    alt="Sales Forecasting"
+                  />
+                </div>
+                <div
+                  class="card-img-overlay useCardOverlay d-flex align-items-end"
+                >
+                  <div class="overlay-text usecaseText">
+                    <h4>Sales Forecasting</h4>
+                    <p class="card-text">
+                      Predict sales trends and identify potential market
+                      opportunities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="card card1">
+                <div class="usecaseImg">
+                  <img
+                    src="./Image/customer segmentation img3.jpg"
+                    class="card-img-top"
+                    alt="Customer Segmentation"
+                  />
+                </div>
+                <div
+                  class="card-img-overlay useCardOverlay d-flex align-items-end"
+                >
+                  <div class="overlay-text usecaseText">
+                    <h4>Customer Segmentation</h4>
+                    <p class="card-text">
+                      Use AI to classify customers into segments for targeted
+                      marketing strategies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more cards as needed -->
+              <!-- Card 3 -->
+              <div class="card card1">
+                <div class="usecaseImg">
+                  <img
+                    src="./Image/FinancialReporting.jpg"
+                    class="card-img-top"
+                    alt="Financial Reporting"
+                  />
+                </div>
+                <div
+                  class="card-img-overlay useCardOverlay d-flex align-items-end"
+                >
+                  <div class="overlay-text usecaseText">
+                    <h4>Financial Reporting</h4>
+                    <p class="card-text">
+                      Automate complex financial analyses to assess risks and
+                      opportunities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="card card1">
+                <div class="usecaseImg">
+                  <img
+                    src="./Image/Operational Efficiency2.jpg"
+                    class="card-img-top"
+                    alt="Operational Efficiency"
+                  />
+                </div>
+                <div
+                  class="card-img-overlay useCardOverlay d-flex align-items-end"
+                >
+                  <div class="overlay-text usecaseText">
+                    <h4>Operational Efficiency</h4>
+                    <p class="card-text">
+                      Optimize supply chain and resource allocation using
+                      data-driven decisions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ############################### Repeat ############################ -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ############################ Usecases section end ####################################### -->
+
+    <!-- ############################ Benefits section Start ####################################### -->
+
+    <div class="container mt-5">
+      <h2 class="BenefitSection text-center mb-4">
+        Elevate Your Work - Not Your Efforts
+      </h2>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="card Benefits border-0 h-100">
+            <div class="card-body benfitsbg">
+              <img
+                src="./Image/decision-making-icon.jpg"
+                alt=""
+                width="40"
+                height="40"
+              />
+              <h5 class="card-title text-black mt-4 cardHeading">
+                Enhanced Decision-Making
+              </h5>
+              <p class="card-text text-black">
+                Data-driven insights lead to more informed business decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="card Benefits border-0 h-100">
+            <div class="card-body benfitsbg">
+              <img
+                src="./Image/increase efficiency icon.jpg"
+                alt=""
+                width="40"
+                height="40"
+              />
+              <h5 class="card-title text-black mt-4 cardHeading">
+                Increased Efficiency
+              </h5>
+              <p class="card-text text-black">
+                Automation reduces the manual effort required for data
+                processing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="card Benefits border-0 h-100">
+            <div class="card-body benfitsbg">
+              <img
+                src="./Image/greater accuracy.jpg"
+                alt=""
+                width="40"
+                height="40"
+              />
+              <h5 class="card-title text-black mt-4 cardHeading">
+                Greater Accuracy
+              </h5>
+              <p class="card-text text-black">
+                AI minimizes human error, ensuring reliable data insights.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="card Benefits border-0 h-100">
+            <div class="card-body benfitsbg">
+              <img
+                src="./Image/scalability icon.jpg"
+                alt=""
+                width="40"
+                height="40"
+              />
+              <h5 class="card-title text-black mt-4 cardHeading">
+                Scalability
+              </h5>
+              <p class="card-text text-black">
+                Easily scale insights from small datasets to massive data lakes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-11">
+          <div class="testimonial">
+            <p>
+              The insights we gained from KiE Square on AI analytics have been
+              transformative. We can now make decisions faster and with more
+              confidence. KiE Square data visualization tools made it easy for
+              our team to grasp complex analytics, leading to smarter strategies
+              and better results.
+            </p>
+          </div>
+          <br /><br /><br /><br />
+        </div>
+      </div>
+    </div>
+
+    <!-- ############################ Benefits section End ####################################### -->
+
+    <!-- ############################ Success Stories section Start ####################################### -->
+    <div class="storiesbg">
+      <!-- Title Section -->
+      <h2 class="SuccessStories text-center mb-4">Innovative Growth Stories</h2>
+
+      <div class="container mt-5">
+        <!-- Image Slider -->
+        <div
+          id="imageSlider"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <div class="carousel-inner carousel-inner-Stories">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="height: 560px">
+              <img
+                src="Image/E-Commerce.jpg"
+                class="d-block w-100"
+                alt="E-Commerce Growth"
+                style="height: 100%; object-fit: cover"
+              />
+              <div class="card-img-overlay overlayCard">
+                <div class="overlay-text">
+                  <h4>E-Commerce Growth</h4>
+                  <p>
+                    A major e-commerce platform implemented our AI analytics
+                    tools, resulting in a 40% increase in conversion rates
+                    through better understanding of customer behavior.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="height: 560px">
+              <img
+                src="Image/HealthCareOptimization.jpg"
+                class="d-block w-100"
+                alt="Healthcare Optimization"
+                style="height: 100%; object-fit: cover"
+              />
+              <div class="card-img-overlay overlayCard">
+                <div class="overlay-text">
+                  <h4>Healthcare Optimization</h4>
+                  <p>
+                    A healthcare provider used our predictive analytics to
+                    optimize patient scheduling, improving operational
+                    efficiency by 20%.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="height: 560px">
+              <img
+                src="Image/FinacialInsight.jpg"
+                class="d-block w-100"
+                alt="Financial Insights"
+                style="height: 100%; object-fit: cover"
+              />
+              <div class="card-img-overlay overlayCard">
+                <div class="overlay-text">
+                  <h4>Financial Insights</h4>
+                  <p>
+                    A financial institution leveraged our advanced analytics to
+                    enhance risk assessment processes, reducing fraud incidents
+                    by 30%.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons with Horizontal Line -->
+        <div class="btn-container mt-4 d-flex align-items-center">
+          <button
+            class="custom-btn"
+            type="button"
+            data-bs-target="#imageSlider"
+            data-bs-slide="prev"
+          >
+            <span>&lt;</span>
+          </button>
+          <div
+            class="custom-line mx-3 flex-grow-1"
+            style="border-top: 2px solid #ccc"
+          ></div>
+          <button
+            class="custom-btn"
+            type="button"
+            data-bs-target="#imageSlider"
+            data-bs-slide="next"
+          >
+            <span>&gt;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <!-- ############################ Success Stories section End ####################################### -->
+
+    <!-- ############################ Form section Start ####################################### -->
+
+    <div style="position: relative; width: 100%; height: 400px">
+      <img
+        src="./Image/contact.jpg"
+        alt=""
+        style="width: 100%; height: 100%; object-fit: cover"
+      />
+      <button
+        class="fs-3"
+        style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 5px 40px;
+          background-color: rgb(239, 59, 95);
+          color: white;
+          border: none;
+          border-radius: 5px;
+        "
+        data-toggle="modal"
+        data-target="#contactModal"
+      >
+        Get In Touch
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" style="max-width: 80%">
+        <!-- Added 'modal-lg' for large size -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Get in touch</h5>
+            <!-- Styled Close Button -->
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              style="
+                border: none;
+                margin-left: 10px;
+                background: transparent;
+                font-size: 1.5rem;
+                color: #dc3545;
+                transition: color 0.3s ease;
+              "
+            >
+              <span aria-hidden="true" style="font-size: 2.5rem">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="fullName" />
+                </div>
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="fullName" />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="businessEmail" class="form-label"
+                    >Business Email</label
+                  >
+                  <input type="email" class="form-control" id="businessEmail" />
+                </div>
+                <div class="col-md-6">
+                  <label for="phoneNumber" class="form-label"
+                    >Phone Number</label
+                  >
+                  <input type="tel" class="form-control" id="phoneNumber" />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="company" class="form-label">Company</label>
+                  <input type="text" class="form-control" id="company" />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inquiryType" class="form-label"
+                    >Inquiry Type</label
+                  >
+                  <select class="form-select" id="inquiryType">
+                    <option selected>Select inquiry type</option>
+                    <option value="1">General Inquiry</option>
+                    <option value="2">Support</option>
+                    <option value="3">Sales</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label"
+                  >Please tell us how we can help you...</label
+                >
+                <textarea class="form-control" id="message" rows="4"></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="privacyPolicy"
+                />
+                <label class="form-check-label" for="privacyPolicy"
+                  >I have read the Privacy Policy and agree to receive
+                  information from [Company Name]</label
+                >
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6Lf86HUqAAAAAH5UqWMsDy3h7l7RBon46znnPI3X"
+                  ></div>
+                </div>
+
+                <div class="col-md-6">
+                  <button type="submit" class="btn btn-warning mt-4">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- ############################ Form section end ####################################### -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Left Section -->
+          <div class="col-md-4">
+            <div class="card p-4">
+              <h5 class="fw-bold">Connect with Us</h5>
+
+              <div class="social-icons mt-4">
+                <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle and Right Section -->
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <h5 class="fw-bold">What we do</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Industries</a></li>
+                  <li><a href="#">Our approach</a></li>
+                  <li><a href="#">Innovation ecosystem</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h5 class="fw-bold">Locations</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Americas</a></li>
+                  <li><a href="#">EMEA</a></li>
+                  <li><a href="#">APAC</a></li>
+                  <li><a href="#">View all</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h5 class="fw-bold">About us</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Who we are</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Leadership team</a></li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-3">
+                <h5 class="fw-bold">Careers</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Explore opportunities</a></li>
+                </ul>
+                <h5 class="fw-bold mt-3">More</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#">Legal Notice</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Cookies Settings</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ################################################# Footer end ######################################################## -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      document
+        .getElementById("contactButton")
+        .addEventListener("click", function () {
+          document.getElementById("contactForm").style.display = "block"; // Show the form when button is clicked
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1024 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'montserrat',serif; */
+  /* font-family: "PT Serif", serif; */
+  font-family: 'Houschka-medium', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 100%;
+  z-index: 3;
+  margin-top: 50px;
+}
+
+
+.carousel-inner-div {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item-div {
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-fade .carousel-item-div {
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-fade .carousel-item-div.active {
+  opacity: 1;
+}
+
+.carousel-item-div img {
+  object-fit: cover;
+  width: 100%;
+
+}
+
+
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.h1home,
+.h2home {
+  font-size: 38px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.h1home {
+  font-size: 60px;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+  z-index: 2;
+}
+
+.animated-text {
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content .word {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: slideIn 4s forwards;
+}
+
+.word1 {
+  animation-delay: 0s;
+}
+
+.word2 {
+  animation-delay: 0.5s;
+}
+
+.word3 {
+  animation-delay: 1s;
+}
+
+.word4 {
+  animation-delay: 1.5s;
+}
+
+.word5 {
+  animation-delay: 2s;
+}
+
+.word6 {
+  animation-delay: 2.2s;
+}
+
+.word7 {
+  animation-delay: 2.4s;
+}
+
+.word8 {
+  animation-delay: 2.6s;
+}
+
+.word8 {
+  animation-delay: 2.8s;
+}
+
+.word9 {
+  animation-delay: 3s;
+}
+
+.word10 {
+  animation-delay: 3.2s;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideFourth {
+  font-size: 52px !important;
+}
+
+.animated-text2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ################### Media query ####################### */
+@media(min-width:1300px) and (max-width: 1500px) {
+  .h1home {
+    font-size: 65px;
+    /* padding-top: 150px; */
+  }
+
+  .hero {
+    height: 100vh !important;
+  }
+
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .h1home {
+    font-size: 50px;
+    /* padding-top: 150px; */
+  }
+
+  .h1home .intelligence {
+    font-size: 50px;
+    padding-left: 15rem;
+    /* border:4px solid red; */
+  }
+
+  .hero {
+    width: 100%;
+    background: cover;
+    height: 100% !important;
+  }
+
+  .hero-content {
+    top: 50% !important;
+  }
+
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+  .h1home {
+    font-size: 45px;
+    /* padding-top: 150px; */
+  }
+
+  .h1home .intelligence {
+    font-size: 45px;
+    padding-left: 8rem;
+    /* border:4px solid red; */
+  }
+
+  .h2home {
+    font-size: 28px;
+  }
+
+  .hero {
+    width: 100%;
+    background: cover;
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+  .h1home {
+    font-size: 43px;
+    /* padding-top: 170px; */
+    /* font-weight: bold; */
+  }
+
+  .h1home .intelligence {
+    font-size: 43px;
+    padding-left: 9rem;
+    /* border:4px solid red; */
+  }
+
+
+
+  .h2home {
+    font-size: 23px;
+  }
+
+  .hero {
+    width: 100% !important;
+    background: cover;
+    height: 100% !important;
+  }
+}
+
+@media(min-width: 430px) and (max-width: 576px) {
+  .h1home {
+    font-size: 26px;
+    /* padding-top: 100px; */
+  }
+
+  .h1home .intelligence {
+    font-size: 26px;
+    padding-left: 1rem;
+    /* border:4px solid red; */
+  }
+
+
+
+  .h2home {
+    font-size: 25px;
+  }
+
+  .hero {
+    width: 100% !important;
+    background: cover;
+    height: 100% !important;
+  }
+}
+
+@media(min-width: 300px) and (max-width: 430px) {
+
+  .h1home {
+    font-size: 24px;
+    /* padding-top: 150px; */
+  }
+
+  .h1home .intelligence {
+    font-size: 20px;
+    padding-left: 1rem;
+    /* border:4px solid red; */
+  }
+
+  .h2home {
+    font-size: 20px;
+    padding-top: 5px;
+  }
+
+  .hero {
+    width: 100% !important;
+    background-size: cover;
+    height: 100% !important;
+  }
+
+}
+
+
+/* ##################### Media query end ####################### */
+
+
+/* <!-- ################################################# Key feature  Section Start ######################################################## -->*/
+
+.main {
+  margin-top: 20px;
+}
+
+.keyfeature {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+}
+
+.expe {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: #880606;
+  text-transform: uppercase;
+}
+
+.expertise {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 5px;
+  flex-wrap: wrap;
+
+}
+
+.expertise-item {
+
+  border-radius: 16px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+
+  text-align: center;
+  width: 350px;
+
+}
+
+#heading2 {
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+}
+
+.expertise-item a {
+  text-decoration: none;
+}
+
+.img-container .image {
+  max-width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.image:hover {
+  border-color: maroon;
+}
+
+.expertisePara {
+  border-radius: 10px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.Expertisesectionhover:hover {
+  box-shadow: 0 4px 18px rgba(128, 0, 0, 0.8),
+    0 6px 12px rgba(128, 0, 0, 0.6), 0 8px 16px rgba(128, 0, 0, 0.4);
+
+  border-radius: 10px;
+}
+
+.img-container {
+  position: relative;
+  border-radius: 0px;
+}
+
+.img-container a {
+  font-size: 1.2rem;
+}
+
+.img-container::after {
+  /* content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  height: 100% !important;
+  background: rgba(60, 59, 59, 0.7);
+  opacity: 0;
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in;
+  border-radius: 10px;
+  border-radius: 10px; */
+}
+
+.img-container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.expertise-item h2 {
+  /* margin-bottom: 10px; */
+  color: #880606;
+
+  font-size: 1.5em;
+}
+
+.expertise-item p {
+  font-size: 1.1em;
+  /* color: #666; */
+  font-weight: 550;
+  margin-top: 30px;
+}
+
+.read-more-btn {
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  /* Adds space between the image and button */
+  padding: 5px 20px;
+  background: linear-gradient(rgb(127, 5, 5), #df7b7b);
+  /* Tomato color */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0px solid #ff6347;
+  /* Border color matching the background */
+  border-radius: 25px;
+  /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+/* Hover effect for the "Read More" button */
+.read-more-btn:hover {
+  background: linear-gradient(rgb(127, 5, 5), #df7b7b);
+  border-color: rgb(127, 5, 5);
+  box-shadow: 0 8px 20px rgba(255, 69, 0, 0.6);
+}
+
+/* <!-- ################################################# Key feature  Section end ######################################################## -->*/
+
+
+/* ######################################## Use case ######################################## */
+
+.usecases {
+  padding: 30px 0;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* Add your scrolling slider CSS here */
+.scrolling-slider {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.scrolling-slider-inner {
+  display: inline-flex;
+  animation: scroll 23s linear infinite;
+}
+
+.scrolling-slider .card {
+  flex: 0 0 auto;
+  width: 44%;
+  margin-right: 15px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-slider-inner:hover {
+  animation-play-state: paused;
+
+}
+
+.usecaseImg img {
+  width: 100%;
+
+  height: 330px;
+
+  object-fit: cover;
+
+}
+
+.useCardOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7) !important;
+  border-radius: 5px;
+}
+
+
+
+.useCardOverlay {
+  margin-top: 240px !important;
+}
+
+.useCardOverlay:hover {
+  margin-top: 0px !important;
+  transition: margin-top 0.8s ease;
+
+}
+
+@media (max-width: 768px) {
+  .scrolling-slider .card {
+    width: 70%;
+
+    margin-right: 10px;
+
+  }
+
+  .usecaseImg img {
+    height: 350px;
+
+  }
+}
+
+@media (max-width: 576px) {
+  .scrolling-slider .card {
+    width: 80%;
+
+    margin-right: 10px;
+
+  }
+
+  .usecaseImg img {
+    height: 330px;
+
+  }
+}
+
+
+/* <!-- ############################ Benefits section Start ####################################### --> */
+
+.BenefitSection {
+  padding: 30px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+}
+
+.Benefits {
+  margin-left: 10px;
+  margin-left: 10px;
+}
+
+
+.benfitsbg {
+  box-shadow: 0 4px 8px rgb(226, 93, 93) !important;
+  /* Subtle white shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+
+}
+
+.benfitsbg:hover {
+  box-shadow: 0 8px 16px rgba(18, 236, 228, 0.5) !important;
+  background-color: rgba(174, 245, 242, 0.5) !important;
+  /* Enhanced shadow on hover */
+  transform: translateY(-15px) !important;
+
+}
+
+.cardHeading {
+  font-weight: 600;
+}
+
+.benfitsbg {}
+
+.benfitsbg:hover {}
+
+.testimonial {
+  box-shadow: 0 4px 8px rgb(226, 93, 93) !important;
+  /* background-color: #041a1d; */
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 50px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial p {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.testimonial::before {
+  content: '“';
+  font-size: 5rem;
+  color: red;
+  position: absolute;
+  top: -30px;
+  left: 5px;
+}
+
+.testimonial::after {
+  content: '”';
+  font-size: 5rem;
+  color: red;
+  position: absolute;
+  top: 75px;
+  right: 10px;
+}
+
+.testimonial:hover {
+  transform: scale(1.03);
+  /* background-color: #B67E49; */
+  /* color: white; */
+  box-shadow: 0 8px 16px rgba(18, 236, 228, 0.5) !important;
+  background-color: rgba(174, 245, 242, 0.5) !important;
+  /* transform: translateY(-15px) !important; */
+  color: black !important;
+}
+
+/* Responsive styling */
+@media (min-width:1280px) and (max-width: 1445px) {
+  /* .Benefits{
+   margin-left: 40px;
+  } */
+}
+
+
+
+@media (max-width: 968px) {
+  /* .Benefits{
+    margin-left: 70px;
+   } */
+}
+
+@media (min-width: 576px) and(max-width: 768px) {
+  .testimonial p {
+    font-size: 16px;
+  }
+
+  .testimonial::before,
+  .testimonial::after {
+    font-size: 4rem;
+  }
+
+  .testimonial::before {
+    top: -20px;
+  }
+
+  .testimonial::after {
+    top: 100px;
+  }
+
+  /* .Benefits{
+    margin-left: 0px;
+   } */
+
+}
+
+@media (max-width: 576px) {
+  .testimonial p {
+    font-size: 15px;
+  }
+
+  .testimonial::before,
+  .testimonial::after {
+    font-size: 3rem;
+  }
+
+  .testimonial::before,
+  .testimonial::after {
+    font-size: 4rem;
+  }
+
+  .testimonial::before {
+    top: -20px;
+  }
+
+  .testimonial::after {
+    top: 120px;
+  }
+
+  /* .Benefits{
+  margin-left: 120px;
+ } */
+}
+
+
+@media (min-width: 500px) and (max-width:576px) {
+  .testimonial::before {
+    top: -20px;
+  }
+
+  .testimonial::after {
+    top: 120px;
+  }
+}
+
+@media (min-width: 450px) and (max-width:500px) {
+  .testimonial::before {
+    top: -20px;
+  }
+
+  .testimonial::after {
+    top: 130px;
+  }
+
+  /* .Benefits{
+    margin-left: 80px;
+  } */
+
+}
+
+@media (min-width: 380px) and (max-width:450px) {
+  .testimonial::before {
+    top: -20px;
+  }
+
+  .testimonial::after {
+    top: 140px;
+
+  }
+
+  /* .Benefits{
+    margin-left: 50px;
+  } */
+
+}
+
+@media (min-width: 330px) and (max-width:380px) {
+  .testimonial::before {
+    top: -20px;
+  }
+
+  .testimonial::after {
+    top: 190px;
+  }
+
+  /* .Benefits{
+    margin-left: 30px;
+  } */
+
+}
+
+@media (max-width: 330px) {
+  .Benefits {
+    margin-left: 15px;
+  }
+
+  .testimonial::before {
+    top: -20px;
+  }
+
+  .testimonial::after {
+    top: 230px;
+  }
+
+}
+
+.testimonial:hover {
+  transform: scale(1.03);
+  background-color: #B67E49;
+  /* background-color: #48110A; */
+  color: white;
+}
+
+
+/* <!-- ############################ Benefits section End ####################################### --> */
+
+
+/* <!-- ############################ Success Stories section Start ####################################### --> */
+.SuccessStories {
+  padding: 30px 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  /* color: white; */
+  color: black;
+  text-transform: uppercase;
+}
+
+/* Custom styling for buttons */
+.custom-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #4c4cff;
+  /* Purple color */
+  color: white;
+  border: none;
+}
+
+.custom-btn:hover {
+  background-color: #3a3acc;
+  /* Darker purple */
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.custom-line {
+  flex-grow: 1;
+  height: 4px;
+  background-color: grey;
+  /* Horizontal line */
+  margin: 0 20px;
+}
+
+/* To ensure images do not stretch */
+.carousel-inner-Stories img {
+  object-fit: cover;
+}
+
+/* Style for the images */
+.carousel-item-Stories img {
+  height: 360px !important;
+
+  object-fit: cover;
+
+  width: 100%;
+}
+
+/* Overlay text styling */
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  /* Add subtle text shadow for clarity */
+}
+
+/* Overlay container alignment */
+/* .overlayCard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} */
+.overlayCard {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0) scale(1);
+}
+
+/* Hover Effect */
+.overlayCard:hover {
+  /* transform: translateY(-20px) scale(1.1); */
+  top: 85%;
+}
+
+.overlayCard .overlay-text h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.overlayCard .overlay-text p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlayCard:hover .overlay-text p {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-item-Stories img {
+    height: 300px;
+    /* Adjust height for smaller screens */
+  }
+
+  .overlayCard {
+    padding: 10px;
+    /* Reduce padding for smaller screens */
+  }
+
+  .overlay-text h4 {
+    font-size: 1.5rem;
+    /* Adjust font size for smaller screens */
+  }
+
+  .overlay-text p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* <!-- ############################ Success Stories section End ####################################### --> */
+
+.formbg {
+  background-color: yellow;
+  border: 4px solid red;
+}
+
+
+
+/* ############################## Footer Section ############################## */
+.footer {
+  background-color: #141414;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: black;
+}
+
+.social-icons a:hover {
+  color: #0d6efd;
+}
+
+.footer .card {
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.footer .btn-primary {
+  background-color: #141414;
+  border: 1px solid #141414;
+  color: #fff;
+}
+
+.footer .btn-primary:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* ########################## Footer End ########################################## */

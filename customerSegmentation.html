@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KiE Square - Customer Segmentation</title>
+
+    <!-- Only Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <!-- #################################### Navbar Start ####################################### -->
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+            <!-- Logo -->
+            <img src="./Image/kielogo.jpeg" alt="Logo" width="250" height="65" />
+
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Navbar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Centered Navigation Links -->
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            What we do
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            What we think
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Who we are
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Careers
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Right Aligned Section -->
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Search Bar -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 px-1 py-1" type="search" placeholder="Search"
+                            aria-label="Search" />
+                    </form>
+
+                    <!-- World Wide Web Icon -->
+                    <img src="./Image/world-wide-web-icon-png-0.jpg" alt="World Wide Web" width="30" height="30" />
+
+                    <!-- India Dropdown -->
+                    <span class="navbar-text">
+                        <a class="nav-link dropdown-toggle text-black text-decoration-none" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            India
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ################################# Home Page Video ####################################### -->
+    <div class="hero">
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="16000" data-bs-pause="false">
+            <div class="carousel-inner carousel-inner-div">
+                <!-- Slide 1 -->
+                <div class="carousel-item carousel-item-div active">
+                    <div class="image-container">
+                        <img src="./assets/images/Customer-Segmentation.jpg" class="img-fluid" />
+                    </div>
+                    <div class="hero-content">
+                        <h1 class="animated-text h1home">
+                            <span class="word word1">AI-Powered</span>
+                            <span class="word word2">Business Intelligence</span>
+                        </h1>
+                        <br />
+                        <h5 class="animated-text2 h2home">
+                            <span class="word word1">for Smarter </span>
+                            <span class="word word2">Customer</span>
+                            <span class="word word3"> Segmentation</span>
+                        </h5>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item carousel-item-div">
+                    <div class="image-container">
+                        <img src="./Image/BG2.jpg" class="d-block w-100" alt="Second slide" />
+                    </div>
+                    <div class="hero-content">
+                        <h1 class="animated-text h1home">
+                            <span class="word word1">AI-Infused</span>
+                            <span class="word word2">BI:</span>
+                            <span class="word word3">Turning</span>
+                            <span class="word word4">Data</span>
+                            <span class="word word5">into</span>
+                            <span class="word word6">Action</span>
+                        </h1>
+                        <br />
+                        <h5 class="animated-text2 h2home">
+                            <span class="word word1">Automate,</span>
+                            <span class="word word2">Predict,</span>
+                            <span class="word word3">and</span>
+                            <span class="word word4">Analyze</span>
+                            <span class="word word5">Your</span>
+                            <span class="word word6">Way</span>
+                            <span class="word word7">to</span>
+                            <span class="word word8">Enhanced</span>
+                            <span class="word word9">Business</span>
+                            <span class="word word10">Performance</span>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-item-div">
+                    <div class="image-container">
+                        <img src="./Image/BG6.jpg" class="d-block w-100" alt="Third slide" />
+                    </div>
+                    <div class="hero-content">
+                        <h1 class="animated-text h1home">
+                            <span class="word word1">Data</span>
+                            <span class="word word2">Intelligence</span>
+                            <span class="word word3">Reinvented</span>
+                            <span class="word word4">with</span>
+                            <span class="word word5">AI</span>
+                        </h1>
+                        <br />
+                        <h5 class="animated-text2 h2home">
+                            <span class="word word1">Experience</span>
+                            <span class="word word2">Smarter</span>
+                            <span class="word word3">Analytics</span>
+                            <span class="word word4">and</span>
+                            <span class="word word5">Transformative</span>
+                            <span class="word word6">BI</span>
+                            <span class="word word7">Solutions</span>
+                            <span class="word word8">to</span>
+                            <span class="word word9">Drive</span>
+                            <span class="word word10">Growth</span>
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-item-div">
+                    <div class="image-container">
+                        <img src="./Image/BG3.jpg" class="d-block w-100" alt="Fourth slide" />
+                    </div>
+                    <div class="hero-content">
+                        <h1 class="animated-text slideFourth">
+                            <span class="word word1">AI-</span>
+                            <span class="word word2">Enhanced</span>
+                            <span class="word word3">Business</span>
+                            <span class="word word4">Intelligence</span>
+                            <span class="word word5">for</span>
+                            <span class="word word6">Competitive</span>
+                            <span class="word word7">Edge</span>
+                        </h1>
+                        <br />
+                        <h5 class="animated-text2 h2home">
+                            <span class="word word1">Transform</span>
+                            <span class="word word2">Raw</span>
+                            <span class="word word3">Data</span>
+                            <span class="word word4">into</span>
+                            <span class="word word5">Strategic</span>
+                            <span class="word word6">Insights</span>
+                            <span class="word word7">that</span>
+                            <span class="word word8">Drive</span>
+                            <span class="word word9">Business</span>
+                            <span class="word word10">Success</span>
+                        </h5>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <section class="main-container">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6">
+                    <h2 class="section-title text-center">A brief description of <br />customer segmentation and
+                        <br />its
+                        importance in
+                        BI.
+                    </h2>
+                </div>
+                <div class="col-6">
+                    <img src="./assets/images/AI-Powdered-Solutions-v1.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-container grey-background ">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-6">
+                    <img src="./assets/images/Sales Forecasting.jpg" class="img-fluid">
+                </div>
+                <div class="col-6">
+                    <h2 class="section-title text-center">How AI Enhances Customer Segmentation/Why Choose AI for
+                        Customer Segmentation?
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-container">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12">
+                    <h2 class="section-title text-center">What Our Clients Say</h2>
+                </div>
+                <div class="testimonial-container">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
+                                                tempor,
+                                                varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel,
+                                                semper malesuada ante.</p>
+                                        </div>
+                                        <div class="media">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Paula Wilson</b></div>
+                                                    <div class="details">Media Analyst / SkyNet</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit
+                                                tincidunt.
+                                                Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat
+                                                faucibus quam.</p>
+                                        </div>
+                                        <div class="media">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Antonio Moreno</b></div>
+                                                    <div class="details">Web Developer / SoftBee</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
+                                                tempor,
+                                                varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel,
+                                                semper malesuada ante.</p>
+                                        </div>
+                                        <div class="media">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Michael Holz</b></div>
+                                                    <div class="details">Web Developer / DevCorp</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit
+                                                tincidunt.
+                                                Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat
+                                                faucibus quam.</p>
+                                        </div>
+                                        <div class="media">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Mary Saveley</b></div>
+                                                    <div class="details">Graphic Designer / MarsMedia</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
+                                                tempor,
+                                                varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel,
+                                                semper malesuada ante.</p>
+                                        </div>
+                                        <div class="media">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Martin Sommer</b></div>
+                                                    <div class="details">SEO Analyst / RealSearch</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit
+                                                tincidunt.
+                                                Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat
+                                                faucibus quam.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left d-flex mr-3">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>John Williams</b></div>
+                                                    <div class="details">Web Designer / UniqueDesign</div>
+                                                    <div class="star-rating">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                            <li class="list-inline-item"><i class="fa fa-star-o"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-container grey-background py-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12">
+                    <h2 class="section-title text-center mb-5">Resources:Dive Deeper into Customer Segmentation
+                    </h2>
+                </div>
+                <div class="col-4">
+                    <div class="resource-container">
+                        <img src="./assets/images/case-study.jpg" class="img-fluid resource-img">
+                        <h4>Case Studies</h4>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="resource-container">
+                        <img src="./assets/images/blog-sm.jpg" class="img-fluid resource-img">
+                        <h4>Blog Articles</h4>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="resource-container">
+                        <img src="./assets/images/webinar-sm.jpg" class="img-fluid resource-img">
+                        <h4>Webinars</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-container">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-8 justify-content-center">
+                    <div class="cta-section">
+                        <h2 class="section-title text-center">"Start Your AI-Powered Journey Today" </h2>
+                        <h4 class="d-block text-center mb-4"> "Sign up now to transform your BI strategy."</h4>
+                        <button class="btn btn-primary">Get Started for Free</button>
+                        <button class="btn btn-primary">Schedule a Demo</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ############################ Form section end ####################################### -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Left Section -->
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <h5 class="fw-bold">Connect with Us</h5>
+
+                        <div class="social-icons mt-4">
+                            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle and Right Section -->
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <h5 class="fw-bold">What we do</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Industries</a></li>
+                                <li><a href="#">Our approach</a></li>
+                                <li><a href="#">Innovation ecosystem</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h5 class="fw-bold">Locations</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Americas</a></li>
+                                <li><a href="#">EMEA</a></li>
+                                <li><a href="#">APAC</a></li>
+                                <li><a href="#">View all</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h5 class="fw-bold">About us</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Who we are</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Leadership team</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <h5 class="fw-bold">Careers</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Explore opportunities</a></li>
+                            </ul>
+                            <h5 class="fw-bold mt-3">More</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Legal Notice</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Cookies Settings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ################################################# Footer end ######################################################## -->
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document
+            .getElementById("contactButton")
+            .addEventListener("click", function () {
+                document.getElementById("contactForm").style.display = "block"; // Show the form when button is clicked
+            });
+    </script>
+</body>
+
+</html>
